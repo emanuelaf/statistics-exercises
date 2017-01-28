@@ -1,0 +1,38 @@
+---
+title: "Exercise session 1"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction, data visualisation and position indexes
+
+Exercise 1.
+
+An airline specialised in long distance flights took data on the passengers that booked a flight on the previous day. The variables they have at disposal are:
+
+1.  $G$: gender
+2.  $X$: highest degree attained
+3.  $Z$: reason for traveling
+4.  $Y$: number of flights bought with that company
+5.  $W$: price of latest flight bought with that company
+
+
+The raw data is presented in the following table:
+
+```{r xtable,echo=FALSE}
+df <- data.frame(
+        id= 1:3,
+        G= c("F","M", "F"),
+        X= c("High school","Bachelor",  "Master"),
+        Z= c("Leisure","Work", "Leisure"),
+        Y= c(1, 3, 1),
+        W= c(343.9, 615, 808))
+
+df
+```
+
